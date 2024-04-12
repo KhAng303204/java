@@ -1,0 +1,215 @@
+---------------------
+Program Marker Report
+---------------------
+
++--Input:
+Program id: 22BI13206
+Program's package directory: /data/projects/usth/SE/2024/assessment.marking/a1-init/submission/Software engineering (2023-2024)-Assignment 1-8700/Khang Nguyễn Phúc_143519_assignsubmission_file_/a1_22BI13206
+Solution program package: vn.edu.usth.se.model.a1
+Program type: null
+Test suite class: class vn.edu.usth.se.tcdefs.a1.TestSuiteStudentMan
+Marking function: vn.edu.usth.se.markingfunc.MarkingFuncStudentMan
+Report directory: /data/projects/usth/SE/2024/assessment.marking/a1-init/marks
+---
+
++--Design:
+  +--a1_22BI13206.Student:
+    +--Class header:
+    ClassInterface(s): 1.00
+
+    Class header Total: 1.00
+    ---
+    +--Representation:
+    Field: id: 1.00
+    Field: name: 1.00
+    Field: phoneNumber: 1.00
+    Field: address: 1.00
+
+    Representation Total: 1.00
+    ---
+    +--Operations:
+      +--Method: Student:
+      behaviour desc: ✔
+      parameters: ❌ (wrong definition)
+      score: 0.50
+      ---
+      +--Method: setAddress:
+      behaviour desc: ❌ (missing or incomplete)
+      parameters: ✔
+      score: 0.50
+      ---
+      +--Method: getPhoneNumber:
+      behaviour desc: ❌ (missing or incomplete)
+      parameters: ✔
+      score: 0.50
+      ---
+      +--Method: repOK:
+      behaviour desc: ❌ (missing or incomplete)
+      parameters: ✔
+      score: 0.50
+      ---
+      +--Method: setPhoneNumber:
+      behaviour desc: ❌ (missing or incomplete)
+      parameters: ✔
+      score: 0.50
+      ---
+      +--Method: toString:
+      behaviour desc: ✔
+      parameters: ✔
+      score: 1.00
+      ---
+      +--Method: compareTo:
+      behaviour desc: ✔
+      parameters: ✔
+      score: 1.00
+      ---
+      +--Method: getAddress:
+      behaviour desc: ❌ (missing or incomplete)
+      parameters: ✔
+      score: 0.50
+      ---
+      +--Method: getName:
+      behaviour desc: ❌ (missing or incomplete)
+      parameters: ✔
+      score: 0.50
+      ---
+      +--Method: setName:
+      behaviour desc: ❌ (missing or incomplete)
+      parameters: ✔
+      score: 0.50
+      ---
+      +--Method: getId:
+      behaviour desc: ❌ (missing or incomplete)
+      parameters: ✔
+      score: 0.50
+      ---
+
+    Operations Total: 0.63
+    ---
+
+  a1_22BI13206.Student Total: 0.81
+  ---
+  +--a1_22BI13206.UndergradStudent:
+    +--Class header:
+
+    Class header Total: 0.00
+    ---
+    +--Representation:
+    ❌ Error: Representation is NOT expected but specified
+
+    Representation Total: 0.00
+    ---
+    +--Operations:
+      +--Method: UndergradStudent:
+      behaviour desc: ✔
+      parameters: ❌ (wrong definition)
+      score: 0.50
+      ---
+      +--Method: toString:
+      behaviour desc: ✔
+      parameters: ✔
+      score: 1.00
+      ---
+
+    Operations Total: 0.75
+    ---
+
+  a1_22BI13206.UndergradStudent Total: 0.38
+  ---
+  +--a1_22BI13206.PostgradStudent:
+    +--Class header:
+
+    Class header Total: 0.00
+    ---
+    +--Representation:
+    Field: gpa: 1.00
+
+    Representation Total: 1.00
+    ---
+    +--Operations:
+      +--Method: PostgradStudent:
+      behaviour desc: ✔
+      parameters: ❌ (wrong definition)
+      score: 0.50
+      ---
+      +--Method: repOK:
+      score: 0.0 (❌ incorrectly defined or missing)
+      ---
+      +--Method: setGpa:
+      behaviour desc: ❌ (missing or incomplete)
+      parameters: ✔
+      score: 0.50
+      ---
+      +--Method: getGpa:
+      behaviour desc: ❌ (missing or incomplete)
+      parameters: ✔
+      score: 0.50
+      ---
+      +--Method: toString:
+      behaviour desc: ✔
+      parameters: ✔
+      score: 1.00
+      ---
+
+    Operations Total: 0.50
+    ---
+
+  a1_22BI13206.PostgradStudent Total: 0.55
+  ---
+
+Design Total: 64.63
+---
+
++--Code Testing:
+  +--a1_22BI13206.Student:
+    +--Errors:
+    constructor: ❌ (not found (not the expected constructor OR incorrectly defined))
+    create test data: ❌ failed to formulate test data for some extra operations, due to: due to: 
+utils.NotPossibleException: DClassUtils.createObject: class does not have the required constructor: class a1_22BI13206.Student
+	at vn.edu.hanu.tools.utils.DClassUtils.createObject(DClassUtils.java:2255)
+	at vn.edu.hanu.tools.testing.TestToolkit.getMethodTDSes(TestToolkit.java:329)
+	at vn.edu.hanu.tools.testing.ClassTester.getMethodTDSes(ClassTester.java:412)
+	at vn.edu.hanu.tools.testing.DClassTester.runAdditionalOptTests(DClassTester.java:198)
+	at vn.edu.hanu.tools.testing.DClassTester.run(DClassTester.java:162)
+	at vn.edu.hanu.tools.pgmarker.oop.OOClassMarker.markCode(OOClassMarker.java:114)
+	at vn.edu.hanu.tools.pgmarker.PgMarker.markCode(PgMarker.java:877)
+	at vn.edu.hanu.tools.pgmarker.PgMarker.markProgram(PgMarker.java:659)
+	at vn.edu.hanu.tools.pgmarker.PgMarker.run(PgMarker.java:182)
+	at vn.edu.usth.se.apps.y2021.PgMarkerSE.main(PgMarkerSE.java:123)
+
+    ---
+    +--Method: Student:
+    score: 0.00
+    ---
+
+  a1_22BI13206.Student Total: 0.00
+  ---
+  +--a1_22BI13206.UndergradStudent:
+    +--Errors:
+    constructor: ❌ (not found (not the expected constructor OR incorrectly defined))
+    ---
+    +--Method: UndergradStudent:
+    score: 0.00
+    ---
+
+  a1_22BI13206.UndergradStudent Total: 0.00
+  ---
+  +--a1_22BI13206.PostgradStudent:
+    +--Errors:
+    constructor: ❌ (not found (not the expected constructor OR incorrectly defined))
+    ---
+    +--Method: PostgradStudent:
+    score: 0.00
+    ---
+
+  a1_22BI13206.PostgradStudent Total: 0.00
+  ---
+
+Code Testing Total: 0.00
+---
+
++--Summary:
+
+Summary Total: 19.39
+---
+
